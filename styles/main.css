@@ -30,7 +30,6 @@ main {
 
 .card {
     background-color: gray;
-    height: 33.33%;
     padding: 3rem;
     color: hsl(0, 0%, 95%);
     display: flex;
@@ -76,6 +75,7 @@ img {
     border: none;
     font-size: 0.8rem;
     font-weight: 700;
+    background-color: white;
 }
 
 .sedans .btn {
@@ -108,7 +108,7 @@ img {
 
     .card {
         padding: 2.5rem;
-        height: 30rem;
+        height: auto;
         position: relative;
     }
 
@@ -125,8 +125,7 @@ img {
     }
 
     .btn {
-        width: 50%;
-        position: absolute;
-        bottom: 2.5rem;
+        width: 70%;
+        margin-top: 1rem;
     }
 }
