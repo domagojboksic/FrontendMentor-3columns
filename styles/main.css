@@ -1,0 +1,90 @@
+:root {
+    --primary-orange: hsl(31, 77%, 52%);
+    --primary-cyan: hsl(184, 100%, 22%);
+    --primary-green: hsl(179, 100%, 13%); 
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    padding: 1rem;
+}
+
+.card {
+    background-color: gray;
+    height: 33.33%;
+    padding: 3rem;
+    color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sedans {
+    background-color: var(--primary-orange);
+}
+.suvs {
+    background-color: var(--primary-cyan);
+}
+.luxury {
+    background-color: var(--primary-green);
+}
+
+img {
+    width: 20%;
+}
+
+.car {
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 700;
+}
+
+.description {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: var(--transparent-white);
+}
+
+.btn {
+    height: 3rem;
+    width: 50%;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.sedans .btn {
+    color: var(--primary-orange);
+}
+
+.suvs .btn {
+    color: var(--primary-cyan)
+}
+
+.luxury .btn {
+    color: var(--primary-green)
+}
+
+.btn:hover, .btn:focus {
+    cursor: pointer;
+    background-color: inherit;
+    border: 1px solid var(--transparent-white);  
+    color: var(--transparent-white); 
+}
